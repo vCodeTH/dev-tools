@@ -27,7 +27,7 @@
     "start": "node dist/index.js",
     "build:start": "npm run build && npm start",
     "test": "mocha --recursive",
-    "lint": "eslint ./src ./test",
+    "lint": "eslint src test",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --recursive && start coverage/lcov-report/index.html"
   },
   "author": "",
