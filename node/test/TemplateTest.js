@@ -13,11 +13,11 @@ describe('Template', function () {
     this.sinon = sandbox
   })
 
-  afterEach(() => {
+  afterEach(function () {
     sandbox.restore()
   })
 
-  describe('somfunction()', () => {
+  describe('somfunction()', function () {
     it('should ...', function () {
 
       const stub = this.sinon.stub(Template.prototype, 'someFunction')
