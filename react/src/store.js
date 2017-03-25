@@ -2,7 +2,9 @@ import { combineReducers } from 'redux'
 import example from './reducers/example'
 
 export const initialStore = {
-  example: []
+  example: {
+    number: 20
+  }
 }
 
 const rootReducer = combineReducers({

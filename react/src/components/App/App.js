@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from './assets/logo.svg'
 import './style.css'
+import Example from '../Example'
 
 const App = () => (
   <div className="App">
@@ -9,7 +10,8 @@ const App = () => (
       <h2>Welcome to React</h2>
     </div>
     <div className="App-intro">
-      vCode Dev-Tools
+      vCode Dev-Tools<br /><br />
+      <Example />
     </div>
   </div>
 )
