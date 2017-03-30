@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import logo from './assets/logo.svg'
-import './style.css'
-import Example from '../Example'
+import './assets/style.css'
 
-const App = () => (
+const App = ({ children }) => (
   <div className="App">
     <div className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
@@ -11,9 +10,13 @@ const App = () => (
     </div>
     <div className="App-intro">
       vCode Dev-Tools<br /><br />
-      <Example />
+      {children}
     </div>
   </div>
 )
+
+App.propTypes = {
+  children: PropTypes.node.isRequired
+}
 
 export default App

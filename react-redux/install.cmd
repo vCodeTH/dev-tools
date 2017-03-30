@@ -1,0 +1,1 @@
+"_cmder.bat" "bash _script.sh"

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Example from './Example'
+import Example from './component'
 import { increaseNumber } from '../../actions/example'
 
 const mapStateToProps = state => ({

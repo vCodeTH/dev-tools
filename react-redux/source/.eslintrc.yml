@@ -2,14 +2,15 @@ extends: airbnb
 parser: "babel-eslint"
 env:
   browser: true
-  es6: true
-  mocha: true
   node: true
+  es6: true
+  jest: true
 plugins:
   - react
   - jsx-a11y
   - import
 rules:
+  linebreak-style: ["error", "unix"]
   eol-last: "off"
   semi: ["error", "never"]
   class-methods-use-this: "off"
@@ -26,8 +27,8 @@ rules:
     "exports": "never",
     "functions": "ignore",
   }]
-  react/jsx-filename-extension: ["warn", { "extensions": [".js", ".jsx"] }]
-  react/prefer-stateless-function: "off"
-  react/require-extension: "off"
   jsx-a11y/no-static-element-interactions: "off"
   import/prefer-default-export: "off"
+  import/no-extraneous-dependencies: ["error", {"devDependencies": ["**/__tests__/*.js", "**/__stories__/*.js"]}]
+  react/jsx-filename-extension: ["warn", { "extensions": [".js", ".jsx"] }]
+  react/require-extension: "off"

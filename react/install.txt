@@ -1,4 +1,0 @@
-npm i -S redux react-redux
-rm -rf src
-perl -i -p -e 's/ eject"\n/ eject",\n    "lint": "eslint src"\n/' package.json
-rm -rf package.json.bak
