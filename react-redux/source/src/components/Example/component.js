@@ -7,8 +7,12 @@ const Example = ({ number, increaseNumber }) => (
 )
 
 Example.propTypes = {
-  number: PropTypes.number.isRequired,
+  number: PropTypes.number,
   increaseNumber: PropTypes.func.isRequired
+}
+
+Example.defaultProps = {
+  number: 10
 }
 
 export default Example
