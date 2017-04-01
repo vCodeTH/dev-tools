@@ -4,12 +4,14 @@ import { storiesOf, action } from '@kadira/storybook'
 import Example from '../component'
 
 const props = {
-  number: 10,
   increaseNumber: action('increase')
 }
 
-storiesOf('', module)
+storiesOf('Example Component', module)
   .addDecorator(story => <div style={{ width: '95%', textAlign: 'center', marginTop: '50px' }}>{story()}</div>)
   .addWithInfo('default', '', () => (
     <Example {...props} />
+  ))
+  .addWithInfo('with props number 50', '', () => (
+    <Example {...props} number={50} />
   ))
